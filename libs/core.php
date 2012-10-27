@@ -59,8 +59,9 @@
 			
 			$_SESSION['simple_message'] = "";
 			$_SESSION['simple_message_class'] = "";	
-			 
-			require_once 'lang/'.$_SESSION['lang'].'.php';	
+			
+			if(file_exists('lang/'.$_SESSION['lang'].'.php'))
+				require_once 'lang/'.$_SESSION['lang'].'.php';	
 			if( $withSession ) include 'libs/session.php';
 			if( $controller != "" ) include 'controllers/'.$controller.'_control.php';
 
