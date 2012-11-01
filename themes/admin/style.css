@@ -2,7 +2,7 @@
 
 	/* TAGS */
 		* {
-			font-family: Arial, Helvetica, sans-serif;
+			font-family: Verdana, Helvetica, sans-serif;
 			font-size: 12px;	
 		}
 		
@@ -16,7 +16,7 @@
 		}
 		html, body { height: 100%; margin: 0px; padding: 0px; }
 		body { 
-			background-color: #EEE; 
+			background-color: #006699; 
 		}
 		table, td, th, ul {
 			margin: 0px;
@@ -27,7 +27,7 @@
 			height: 100px;
 		}
 		input[type='text'], input[type='password'], textarea {
-			width: 200px;
+			width: 340px;
 		}
 		input[type='text'], textarea, select {
 			padding: 2px;		
@@ -36,30 +36,43 @@
 			margin: 0px;
 			padding: 5px;
 			font-size: 20px;
-			text-align: center;
 		}
+		img { border: 0px; }
+		li { list-style:  none; }
+		small { font-size: 10px; }
 
 	/* Simple Header */
 		#login {
-			width: 220px;
-			margin: 10px auto;
+			width: 300px;
+			margin: 10px 50px;
 		}
 		#header {
-			padding: 10px 0px;
-			background-color: #EEE;
+			padding: 0px;
+			background-color: #006699;
 			border-bottom: 1px solid #CCC;
+			color: #FFF;
 		}
 		#header h1 {
 			padding: 0px 10px 4px 10px;
-			text-align: left;			
+			margin: 10px 2px;
+			text-align: left;		
+			font-size: 30px;	
+			color: #FFF;
 		}
 		#header h1 a {
-			font-size: 24px;
+			font-size: 14px;
 			text-decoration: none;
+			color: #F2F2F2;
+		}
+		#header h1 a:hover {
+			color: #006699;
+		}
+		#header h1 img {
+			vertical-align: middle;
 		}
 		#footer {
 			padding: 0px;
-			background-color: #EEE;
+			background-color: #006699; 
 			border-top: 1px solid #CCC;
 		}
 		#footer h6 {
@@ -69,28 +82,72 @@
 			font-weight: normal;
 			text-align: right;
 		}
-		
+		#producedBy {
+			width: 97%;
+			margin: 10px auto;
+			font-size: 9px;
+			text-align: right;
+		}
+		#producedBy a{
+			color: #000;
+			text-decoration: none;
+			font-size: 9px;
+		}
+		#producedBy a:hover{
+			font-weight: bold;
+			font-style: italic;
+		}
 		#main {
 			padding: 20px 0px;
 			background-color: #FFF;
+			vertical-align: top;
 		}
 		#main h1{
-			margin-top: 20px;
+			font-size: 28px;
+		    font-weight: normal;
+		    margin-left: 50px;
+		    margin-top: 20px;
 		}
-		
-		.menu li{
-			display: inline;
-			padding: 2px 10px;
+		#sidebar {
 			border-right: 1px solid #CCC;
+			width: 18%;
+			vertical-align: top;
+			background-color: #EEEEEE;
+		}
+		.menu {
+			margin: 20px 5px;
+		}
+		.menu li{
+			padding: 2px 10px;
+			font-size: 14px;
 		}
 		.menu li.last{
 			border-right: 0px;
+		}
+		.menu li.selected {
+			border-top: 1px solid #CCCCCC;
+			border-bottom: 1px solid #CCCCCC;
+			background-color: #FFFFFF;
+			background-image: url('/img/admin/arrow.png');
+			background-position: 98% 50%;
+			background-repeat: no-repeat;
+		}
+		.menu li a{
+			text-decoration: none;
+		}
+		.menu li.selected a{
+			font-size: 16px;
+		}
+		.menu li a:hover{
+			font-style: italic;
 		}
 			
 		.userPanel {
 			float: right;
 			margin-right: 20px;
+			margin-top: -30px;
 		}	
+		.userPanel a { color: #FFF; }
 		
 	/* Simple message classes */
 		.simple_message {
@@ -123,8 +180,8 @@
 	/* Simple Modal Window */
 		#modalWindow {
 			display: none;
-		    border: 1px solid #CCC;
-		    background-color: #EEE;
+		    border: 1px solid #006699;
+		    background-color: #A1C24F;
 		    position: absolute;
 		    left: 50%;
 		    top: 80px;
@@ -134,29 +191,28 @@
 			-moz-box-shadow: 0px 0px 20px 0px #CCC;
 			box-shadow: 0px 0px 20px 0px #CCC;  
 			
-			-moz-border-radius-topleft: 10px;
-			-moz-border-radius-topright: 0px;
-			-moz-border-radius-bottomright: 10px;
-			-moz-border-radius-bottomleft: 0px;
-			-webkit-border-radius: 10px 0px 10px 0px;
-			border-radius: 10px 0px 10px 0px; 
-			
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+					
 		    width: 600px;
 		    margin-left: -300px;
 		    padding-bottom: 10px;
 		}
 		#modalWindow h1 {
 			margin-top: 3px;
+		    margin-left: 0px;
 			border-bottom: 1px solid #CCC;
 			text-align: left;
+			color: #FFF;
 		}
 		#modalWindow .tableData {
 			width: 100%;
 			margin: 0px auto;
-			padding: 10px 20px;
-		    background-color: #FFF;
+			padding: 10px 0px;
+		      background-color: #FFF;
 			border-bottom: 1px solid #CCC;
-			border-top: 20px solid #FFF;
+			border-top: 10px solid #FFF;
 		}
 		#modalWindow .tableData  td.buttonsData {
 			padding: 10px 0px;
@@ -165,34 +221,29 @@
 		#modalWindow .tableData  td.leftColData {
 			text-align: right;
 			width: 120px;
-			padding: 2px 3px;
+			padding: 8px 3px;
+			vertical-align: top;
+			background-color: #F5F5F5;
 		}
 		#modalWindow #close {
 			float: right;
 		    margin-right: 5px;
-		    margin-top: -25px;
+		    margin-top: -45px;
 		}
 
 	/* Simple Table List*/
 		.tableList {
 			background-color: #EEE;
-			width: 300px;
-			margin: 20px auto;
+			width: 75%;
+			margin: 20px 0px 20px 50px;
 			border: 1px solid #CCC;
-			
-			-moz-border-radius-topleft: 10px;
-			-moz-border-radius-topright: 0px;
-			-moz-border-radius-bottomright: 10px;
-			-moz-border-radius-bottomleft: 0px;
-			-webkit-border-radius: 10px 0px 10px 0px;
-			border-radius: 10px 0px 10px 0px; 
 		}
 		
 		.tableList table {
 			width: 100%;
 		}
 		.tableList th {
-			font-size: 18px;
+			font-size: 14px;
 			padding: 5px;
 			border-bottom: 1px solid #CCC;
 			border-right: 1px solid #CCC;
@@ -209,6 +260,10 @@
 		.tableList th.last{
 			width: 38px;
 			text-align: center;
+		}
+		.tableList td.last{
+			width: 40px;
+			text-align: right;
 		}
 
 	/* Simple Table List Pagination */	
@@ -236,7 +291,7 @@
 	/* Simple Table Account */		
 		.tableAccount {
 			width: 300px;
-			margin: 10px auto;
+			margin: 10px 50px;
 		}
 		.tableAccount td{
 			text-align: right;
@@ -311,3 +366,96 @@
 			text-align:center; 
 			font-size:30px; 
 		}
+
+
+		input.fecha {
+			width: 100px;		
+		}
+		input.medio {
+			width: 140px;		
+		}
+		input.numero {
+			width:50px;
+		}
+
+#listaProductos {
+	width: 95%;
+	vertical-align: top;
+	border: 1px solid #000;
+	background-color: #6D6C69;
+	padding: 10px 0;
+}
+#listaProductos h2 {
+	width: 100%;
+	padding: 4px 0px;
+	margin: 0px;
+	background-color: #6D6C69;
+	color: #FFF;
+}
+#listaProductos li {
+	list-style: none;	
+	padding: 4px 10px;
+	background-color: #FFF;
+}
+#listaProductos div {
+	border: 1px solid #111;
+	height: 290px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	width: 90%; 
+	margin: 0px auto;
+}
+#listaProductos li.par {
+	background-color: #F3F7EA;
+}
+.mceNoEditor {
+	height: 50px;
+	margin-right: 10px;
+}
+ul.listadoTipos{
+	border: 1px solid #F1F1F1;
+	max-height: 70px;
+	overflow: auto;	
+	width: 340px;
+	margin: 5px;
+}
+.listadoTipos li{
+	list-style: none;
+	padding-left: 10px;
+	background-color: #F1F1F1;
+}
+.listadoTipos li.par{
+	background-color: #FEFEFE;
+}
+.pequena {
+	font-size: 10px;
+}
+.campoNoInput {
+	font-style: italic;
+}
+.addNuevo {
+		margin-left: 50px;
+		width: 200px;
+}
+.campoMiniFactura {
+	width: 50px !important;
+	font-size: 9px; 
+	text-align: right;
+	float: right; 
+	height: 14px; 
+	line-height: 12px;
+	border: 0px;
+	border-bottom: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+.campoMiniFactura2 {
+	width: 50px !important;
+	font-size: 12px; 
+	text-align: right;
+	float: right; 
+	height: 18px; 
+	line-height: 14px;
+	border: 0px;
+	border-bottom: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
