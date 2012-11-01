@@ -1,5 +1,5 @@
 <? 	
-	$web = new simple(true,1,'account');  
+	$web = new jmyphp(true,1,'account');  
 	$web->Title = _ACCOUNT_;
 	$user = $web->Object;
 ?>

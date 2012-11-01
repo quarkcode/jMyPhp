@@ -2,7 +2,7 @@
 
 	session_start();
 	
-	include 'libs/core.php';
+	include 'libs/jmyphp.php';
 	
 	if($_GET['f']=="")
 		@include "pages/".(($_GET['page'] == '') ? 'index':$_GET['page']).".php";

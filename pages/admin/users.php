@@ -1,5 +1,5 @@
 <? 
-	$web = new simple( true , 100, 'iud', array(table =>'user') );
+	$web = new jmyphp( true , 100, 'iud', array(table =>'user') );
 	$web->Title = _USERS_;
 	$users = $web->Object;
 ?>

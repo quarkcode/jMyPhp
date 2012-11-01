@@ -1,5 +1,5 @@
 <? 
-	$web = new simple( false , 0 );
+	$web = new jmyphp( false , 0 );
 	$web->Title = "404 Error";
 ?>
 

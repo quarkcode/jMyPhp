@@ -1,5 +1,5 @@
 <? 
-	$web = new simple( true , 100, 'module' );
+	$web = new jmyphp( true , 100, 'module' );
 	$web->Title = _MODULES_;
 ?>
 

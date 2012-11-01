@@ -6,7 +6,7 @@
 		
 	ob_start();
 	
-	class simple {
+	class jmyphp {
 		
 		var $sessid = "";
 		

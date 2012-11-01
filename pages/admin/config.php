@@ -1,5 +1,5 @@
 <? 	
-	$web = new simple( true , 100, 'iud');
+	$web = new jmyphp( true , 100, 'iud');
 	$conf = $web->Object;
 ?>
 	

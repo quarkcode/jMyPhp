@@ -1,5 +1,5 @@
 <? 
-	$web = new simple( true , 100, 'iud', array(table =>'config') );
+	$web = new jmyphp( true , 100, 'iud', array(table =>'config') );
 	$web->Title = _CONFIG_;
 	$configs = $web->Object;
 ?>

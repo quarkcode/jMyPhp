@@ -1,5 +1,5 @@
 <? 
-	$web = new simple	( 	false,	#¿REQUIERE HACER LOGIN?
+	$web = new jmyphp	( 	false,	#¿REQUIERE HACER LOGIN?
 							0 );	#¿CUAL ES EL NIVEL REQUERIDO PARA LA PAGINA?
 						
 	$web->Title = "";
