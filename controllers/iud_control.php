@@ -6,7 +6,7 @@
 		
 		$valores_campos				= array(
 											"pass" 					=> simple_encrypt($_POST['pass'],$globals['key']), 
-											"ultimo_cambio_pass" 	=> date('Y-m-d'),
+											"last_pass_change" 	=> date('Y-m-d'),
 											"fecha" 				=> date("Y-m-d 00:00:00",strtotime(str_replace("/", "-", $_POST['fecha']) . " 00:00"))
 											);
 		
