@@ -42,9 +42,10 @@
 	
 			ob_end_clean();
 		
-			if($this->Theme == 'ajax' || $this->Theme == 'blank') 
+			if($this->Theme == 'ajax' || $this->Theme == 'blank') {
+				header('Content-Type: text/html; charset=iso-8859-1');
 				echo $this->Head.$this->Body;
-			else 
+			} else 
 				include 'themes/'.$this->Theme."/main.php";
 				
 			$db->close();
